@@ -39,3 +39,27 @@
 
 # debug information files
 *.dwo
+
+
+# ---------------------------------------------------
+# ESPECÍFICOS DE NS-3  (AÑADIDOS MANUALMENTE)
+# ---------------------------------------------------
+
+# Directorios de Compilación
+build/
+c4che/
+ns3-*
+
+# Archivos de Cache Waf
+.lock-waf-tools
+.waf-1*
+.user_rec
+
+# Archivos de Salida de Simulacion (Trazas y Logs)
+# Ignorar los resultados de la simulacion para no subirlos
+*.pcap      # Archivos de trazas de paquetes (Wireshark)
+*.tr        # Archivos de traza ASCII
+*.xml       # Salidas de FlowMonitor o trazas XML
+*.flowmon   # Salidas de FlowMonitor
+*.txt       # Logs de simulacion
+*.dat       # Datos de salida para gráficos
